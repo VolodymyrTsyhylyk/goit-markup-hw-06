@@ -718,6 +718,14 @@ body {
   transform: translate(-50%, -50%) scale(0.95);
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .modal {
   position: absolute;
   left: 50%;
@@ -866,8 +874,9 @@ body {
 }
 
 .checkbox:checked + .check-icon {
-  color: var(--white-text-color);
   background-color: var(--accent-color);
+  color: var(--white-text-color);
+
   border: none;
 }
 
